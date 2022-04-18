@@ -7,7 +7,27 @@ run following commands in different terminals
   #...
 #+end_src
 
-* note (why bytes dependency)
+* For learning purposes
+** This experience help me to get a deeper understanding about following knowledges
++ tokio
++ async
++ io/net/tcp
++ bytes
++ Arc/Mutex/RwLock
+
+** The following skills are also get exercise
++ generic
++ error handling
++ trait
++ mpsc
++ unittest
++ Vec/VecDeque/HashMap
+
+* Notes
+** The tokio's tutorial is awesome
+https://tokio.rs/tokio/tutorial/
+
+** why add bytes dependency
 https://tokio.rs/tokio/tutorial/shared-state
 
 + The goal of Bytes is to provide a robust byte array structure for network programming.
@@ -16,19 +36,3 @@ https://tokio.rs/tokio/tutorial/shared-state
 + Instead, a Bytes instance is a reference-counted handle to some underlying data.
 The Bytes type is roughly an Arc<Vec<u8>> but with some added capabilities.
 + BytesMut <-> Arc<Mutex<Vec<u8>>>
-
-* for learning purposes
-This experience help me to get a deeper understanding about following knowledges:
-+ tokio
-+ async
-+ io/net/tcp
-+ bytes
-+ Arc/Mutex/RwLock
-
-The following skills are also get exercise:
-+ generic
-+ error handling
-+ trait
-+ mpsc
-+ unittest
-+ Vec/VecDeque/HashMap
